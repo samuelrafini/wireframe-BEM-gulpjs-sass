@@ -1,0 +1,25 @@
+@import "../scss/setting.scss";
+
+.footer {
+  color: $off-white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 3rem;
+  background-color: $dark-gray;
+  padding: $s-size;
+
+  &__copyright {
+    font-size: $m-size;
+    color: $off-white;
+    align-self: center;
+  }
+
+  &__wrapper {
+    justify-self: flex-end;
+    align-self: center;    
+  }
+
+  & li {
+    float: left;
+  }
+}

@@ -1,0 +1,68 @@
+@import "../scss/setting.scss";
+
+h1 {
+  font-size: $xl-size;
+  margin-bottom: $m-size;
+}
+
+.subtitle {
+  font-size: $l-size;
+  margin-bottom: $s-size;
+}
+
+p {
+  font-size: $m-size;
+}
+
+header {
+  color: $off-white;
+  display: grid;
+  background-color: $dark-gray;
+  grid-template-columns: 1fr 4fr;
+  padding: $s-size;
+  height: 40rem;
+}
+.navigation {
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  height: 90%;
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+  background-color: $light-gray;
+}
+
+.menu {
+  grid-row: 2;
+
+  &__list-item {
+    font-size: $m-size;
+    text-align: center;
+    margin: $m-size;
+    height: 3rem;
+    list-style-type: none;
+  }
+
+  &__link {
+    color: $off-white;
+    text-decoration: none;
+  }
+}
+
+.headline {
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+
+  &-list {
+    margin-top: 3rem;
+
+    & li {
+      display: inline;
+      float: left;
+      margin-left: 5px;
+    }
+  }
+}
